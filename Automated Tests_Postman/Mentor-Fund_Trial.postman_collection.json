@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "dcf413ec-9fc4-49cf-a725-c7347db23192",
+		"name": "Mentor/Fund_Trial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12468790"
+	},
+	"item": [
+		{
+			"name": "https://api.crowdfunding.lfx.linuxfoundation.org/v1/projects/with-subscriptions/f44da17d-70da-45f3-8f9b-0ae733494167",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.crowdfunding.lfx.linuxfoundation.org/v1/projects/with-subscriptions/f44da17d-70da-45f3-8f9b-0ae733494167",
+					"protocol": "https",
+					"host": [
+						"api",
+						"crowdfunding",
+						"lfx",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"v1",
+						"projects",
+						"with-subscriptions",
+						"f44da17d-70da-45f3-8f9b-0ae733494167"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.crowdfunding.lfx.linuxfoundation.org/v1/projects/with-subscriptions/f44da17d-70da-45f3-8f9b-0ae733494167",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.crowdfunding.lfx.linuxfoundation.org/v1/projects/with-subscriptions/f44da17d-70da-45f3-8f9b-0ae733494167",
+					"protocol": "https",
+					"host": [
+						"api",
+						"crowdfunding",
+						"lfx",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"v1",
+						"projects",
+						"with-subscriptions",
+						"f44da17d-70da-45f3-8f9b-0ae733494167"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.people.dev.platform.linuxfoundation.org/projects/3c90f634-1295-4d1d-82f9-05512294605a/role",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.people.dev.platform.linuxfoundation.org/projects/3c90f634-1295-4d1d-82f9-05512294605a/role",
+					"protocol": "https",
+					"host": [
+						"api",
+						"people",
+						"dev",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"projects",
+						"3c90f634-1295-4d1d-82f9-05512294605a",
+						"role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.mentorship.lfx.linuxfoundation.org/mentors/0fb616a6-00a3-43a5-8ee2-7006bb1c7d1d/profile/mentor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.mentorship.lfx.linuxfoundation.org/mentors/0fb616a6-00a3-43a5-8ee2-7006bb1c7d1d/profile/mentor",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mentorship",
+						"lfx",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"mentors",
+						"0fb616a6-00a3-43a5-8ee2-7006bb1c7d1d",
+						"profile",
+						"mentor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.people.dev.platform.linuxfoundation.org/projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.people.dev.platform.linuxfoundation.org/projects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"people",
+						"dev",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

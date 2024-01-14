@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "9e5cbd5c-cdc9-46d5-af91-2d4f4844cf25",
+		"name": "Security_V2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12468790"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-gw.dev.platform.linuxfoundation.org/v2/github/app/installation",
+					"protocol": "https",
+					"host": [
+						"api-gw",
+						"dev",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"v2",
+						"github",
+						"app",
+						"installation"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

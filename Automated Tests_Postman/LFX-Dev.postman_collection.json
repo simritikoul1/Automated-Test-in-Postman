@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "95ea0d62-2037-4aaf-a4dd-41d5cbe48542",
+		"name": "LFX-Dev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12468790"
+	},
+	"item": [
+		{
+			"name": "GetAuthToken-Stag",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Auth0-Client",
+						"value": "eyJuYW1lIjoiQGF1dGgwL2F1dGgwLWFuZ3VsYXIiLCJ2ZXJzaW9uIjoiMS4zLjEifQ==",
+						"disabled": true
+					},
+					{
+						"key": "Referer",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"grant_type\": \"http://auth0.com/oauth/grant-type/password-realm\",\n    \"realm\": \"Username-Password-Authentication\",\n    \"username\": \"vthakur.staging\",\n    \"password\": \"Ranthakur17@\",\n    \"client_id\": \"aHbAnFCTLNIZ4EUtBghDvn6eTAIrkONN\",\n    \"audience\": \"https://api-gw.staging.platform.linuxfoundation.org/\",\n    \"scope\": \"access:api openid profile email\"\n}"
+				},
+				"url": {
+					"raw": "https://linuxfoundation-staging.auth0.com/oauth/token",
+					"protocol": "https",
+					"host": [
+						"linuxfoundation-staging",
+						"auth0",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

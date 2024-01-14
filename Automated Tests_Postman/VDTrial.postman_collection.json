@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "78995aa8-7fa2-47a1-8155-2ef4f65d17b2",
+		"name": "VDTrial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12468790"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.security.dev.platform.linuxfoundation.org/vulnerability/summary?project_ids=e6a93de8-ce28-4085-a562-9d7475ceaa22",
+					"protocol": "https",
+					"host": [
+						"api",
+						"security",
+						"dev",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"vulnerability",
+						"summary"
+					],
+					"query": [
+						{
+							"key": "project_ids",
+							"value": "e6a93de8-ce28-4085-a562-9d7475ceaa22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProdetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.security.dev.platform.linuxfoundation.org/vdproject/6cc88826-435c-49f1-a797-5d39b343c82c",
+					"protocol": "https",
+					"host": [
+						"api",
+						"security",
+						"dev",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"vdproject",
+						"6cc88826-435c-49f1-a797-5d39b343c82c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.security.dev.platform.linuxfoundation.org/vdproject/1a208098-7ecf-40c3-a991-5cb5e50f3af1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"security",
+						"dev",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"vdproject",
+						"1a208098-7ecf-40c3-a991-5cb5e50f3af1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-gw.platform.linuxfoundation.org/project-service/v1/projects/search?name=test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-gw.platform.linuxfoundation.org/project-service/v1/projects/search?name=test",
+					"protocol": "https",
+					"host": [
+						"api-gw",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"project-service",
+						"v1",
+						"projects",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-gw.dev.platform.linuxfoundation.org/security-service/v2/projects/statistics?project-ids=84be6ace-80e7-4cc7-b2a7-a88163a52d0f",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJFWTNSVGcyTTBVMk5URTRSamcwTUVRNU9VSkZRMFpGTVVGRVJUaEVRVVF5TTBZeVF6QXhOQSJ9.eyJodHRwczovL3Nzby5saW51eGZvdW5kYXRpb24ub3JnL2NsYWltcy91c2VybmFtZSI6InNpbXJpdGkiLCJnaXZlbl9uYW1lIjoiU2ltcml0aSIsImZhbWlseV9uYW1lIjoiS291bCIsIm5pY2tuYW1lIjoic2ltcml0aSIsIm5hbWUiOiJTaW1yaXRpIEtvdWwiLCJwaWN0dXJlIjoiaHR0cHM6Ly9wbGF0Zm9ybS1sb2dvcy1teXByb2ZpbGUtYXBpLWRldi5zMy51cy1lYXN0LTIuYW1hem9uYXdzLmNvbS9zaW1yaXRpLmtvdWwuMTYwNDA1NzgwNDQ4Ni5wbmciLCJ1cGRhdGVkX2F0IjoiMjAyMC0xMi0wOVQxMToxODoyNS42NzRaIiwiZW1haWwiOiJzaW1yaXRpa0Bwcm94aW1hYml6LmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpc3MiOiJodHRwczovL2xpbnV4Zm91bmRhdGlvbi1kZXYuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfHNpbXJpdGkiLCJhdWQiOiJiWVd1TWtVb08wd01xbDVGeFQ4M01kS1NnUmdURWNLOCIsImlhdCI6MTYwNzUxMjcxMSwiZXhwIjoxNjA3NTQ4NzExLCJub25jZSI6ImVHMVBWWEZhZEhkMlJWcHVNbTVvWTJvMmZsVm9hSGN0ZmxwQ1FtRXdZV2w0WWxWelozVkRUMWhGVVE9PSJ9.i2s9xAr60J9srnlqtjThtunnqEXHeQMGCIckP_CI9E11OrwIoS-3JrzhpOkOkURs7uhYvHaaVsvMdpHRNY4GQJ1PrsTDTvCL1IuKNKrV6GYbpqY-FZr0hEeI2TxFuwcxKU4JXnHs67T_426MffFdU27z3bNRmQDm7UdCtoQPN6wklgo8S5dQ9TACWzZ3HA5U5CVYp7imDaJPq8SKHgIPJSYAMrN8NmBLqnLD3qY40W1QCuD1FEm3eXayakB5CLzC0Tz315IETfHW31DfxnccWMR9A2jDJwzyIga9AAxFAOnDAUWVXdJxUGDqAEe1CL4qHJ78tt_s9xHYYIGpekYZ0w",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-gw.dev.platform.linuxfoundation.org/security-service/v2/projects/statistics?project-ids=bc14bed1-e383-43fd-8ef2-41cea90ef39f",
+					"protocol": "https",
+					"host": [
+						"api-gw",
+						"dev",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"security-service",
+						"v2",
+						"projects",
+						"statistics"
+					],
+					"query": [
+						{
+							"key": "project-ids",
+							"value": "bc14bed1-e383-43fd-8ef2-41cea90ef39f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-gw.dev.platform.linuxfoundation.org/security-service/v2/projects/statistics?project-ids=84be6ace-80e7-4cc7-b2a7-a88163a52d0f&from-date>=2020-05-02T00:00:00+00:00&to-date=2020-05-11T00:00:00+00:00",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlJFWTNSVGcyTTBVMk5URTRSamcwTUVRNU9VSkZRMFpGTVVGRVJUaEVRVVF5TTBZeVF6QXhOQSJ9.eyJodHRwczovL3Nzby5saW51eGZvdW5kYXRpb24ub3JnL2NsYWltcy91c2VybmFtZSI6InAubWFpbnRhaW5lci4xIiwiZ2l2ZW5fbmFtZSI6IlAgTWFpbnRhaW5lciAxIiwiZmFtaWx5X25hbWUiOiJkZXYiLCJuaWNrbmFtZSI6InAubWFpbnRhaW5lci4xIiwibmFtZSI6IlAgTWFpbnRhaW5lciAxIGRldiIsInBpY3R1cmUiOiJodHRwczovL2Rldi1sZngtYmZmLWxvZ28uczMuYW1hem9uYXdzLmNvbS8xNTY3ODYyNjAyOTI0YmxvYiIsInVwZGF0ZWRfYXQiOiIyMDIwLTEyLTExVDA3OjU5OjAzLjc4MVoiLCJlbWFpbCI6Im1hbmlrYW50YW5yK3BfbWFpbnRhaW5lcl8xQGJpYXJjYS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6Ly9saW51eGZvdW5kYXRpb24tZGV2LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHxwLm1haW50YWluZXIuMSIsImF1ZCI6ImJZV3VNa1VvTzB3TXFsNUZ4VDgzTWRLU2dSZ1RFY0s4IiwiaWF0IjoxNjA3NjczNTQ5LCJleHAiOjE2MDc3MDk1NDksIm5vbmNlIjoiUTI1aVQwdFlVRlIwUkdkMFdtbE5ibXN0VnpNd04yd3hlbVZuT1d4RGRrNVVTME5YVkc1MFVYTldNUT09In0.siKJiUABFud9994rfGk8lbHaX7NXWO_9YeX-UqMkqZFPSi-VzdhryxUs2S43-cXgXCoZCP3vh1Vz4Xsa99HHEALFRxSFs62j6_uXDWX4DNuH88S7U7wv_8cA-JYQpaGjAo3BlvaF7w2obJGXfFHIDWKafSxN9m1WKqF641lSOyCXHTFvHIj_9mT5_5RaF6ZWw7-e3Q7kuWrOsfAS0bQkW14c5K01-Dd5CfDmmZnEpC9Uq6uzaHcf821VYdk6o5hnn2kxAqTc3E6zfgWp6vKVfs5hqWadAZdj8USGkhDuRMy5g40H0m5Gmg0RaGFZIpjqn8HBMS7YF5o2weraE_3GoQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api-gw.dev.platform.linuxfoundation.org/security-service/v2/projects/statistics?from-date=2020-03-17T09:42:00+00:00&to-date=2020-05-10T09:42:00+00:00",
+					"protocol": "https",
+					"host": [
+						"api-gw",
+						"dev",
+						"platform",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"security-service",
+						"v2",
+						"projects",
+						"statistics"
+					],
+					"query": [
+						{
+							"key": "from-date",
+							"value": "2020-03-17T09:42:00+00:00"
+						},
+						{
+							"key": "to-date",
+							"value": "2020-05-10T09:42:00+00:00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.security.lfx.linuxfoundation.org/v1/metrics-report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.security.lfx.linuxfoundation.org/v1/metrics-report",
+					"protocol": "https",
+					"host": [
+						"api",
+						"security",
+						"lfx",
+						"linuxfoundation",
+						"org"
+					],
+					"path": [
+						"v1",
+						"metrics-report"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
